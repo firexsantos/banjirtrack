@@ -1,0 +1,4 @@
+Untuk seeder
+**********************
+- php artisan db:seed
+

@@ -1,0 +1,71 @@
+ANDROID
+***************
+- TAMBAH FILTER DAERAH BANJIR
+- User hanya bisa melihat titik alat terdekat dari lokasi user
+- Pengaduan
+	- 
+- Panic Button
+	- Ditekan memunculkan pilihan. Contoh:
+		- Air sudah hampir banjir
+		- Air sudah mendekati tanah
+		- Dll
+	- Mengampil Gambar
+	- Menyimpan Koordinat
+	- Mengirim data panik pakai delay
+		- Misalnya, hanya bisa mengirim data setiap satu jam
+	- Posisi panic button di tengah
+- User harus daftar
+	- Login by Gmail
+	- Login by Facebook
+- Tampilan pertama android adalah Home
+	- Home isinya menu
+		- Pengaduan
+		- Panduan
+		- Informasi/Pengumuman (Blog)
+			- Judul
+			- Jenis (Artikel/Video)
+			- Video link youtube
+			- Isi Artikel
+			
+		- Menampilkan Tombol
+- Menampilkan Legend dengan fungsi sama dengan web
+	- 
+- Menu ke Empat adalah Akun
+	- Ketika dklik menmapilkan Akun/Profil User
+	
+FINAL MENU ANDROID
+*****************
+- Peta
+- Pengaduan
+	- Pengaduan
+	- Informasi
+	- Panduan
+- Panik Button
+- FAQ
+- Akun
+
+WEB
+**************
+- FILTER DATA TAMPILLANNYA LEBIH BESAR
+- DETAIL ALAT
+	- Alamat Alat
+	- Foto Kawasan
+	- Koordinat
+	- Ketinggian Air
+	- Curah Hujan
+	- Suhu dan Kelembapan
+	- Informasi Cuaca berdasarkan Titik
+- INFORMASI IKLIM (DARI BMKG)
+- Legend Menampilkan Seluruh Alat
+	- Nama Alat
+	- Ketinggian Air
+	- Menampilkan data berdasarkan titik yang ditampilkan di peta
+- Titik peta ditampilkan berdasarkan radius Geo Lokasi
+- Filter Sebelah Kanan
+	- Berdasarkan Pengelompokan Ketinggian Air. Misalnya:
+		- Aman
+		- Siaga Banjir
+		- Darurat Banjir
+	- Berdasarkan Curah Huran
+	- Filter Mempengaruhi Tampilan Data yang ada di Legend
+	

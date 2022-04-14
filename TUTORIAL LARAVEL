@@ -1,0 +1,94 @@
+MEMBUAT PROJEK BARU
+****************************
+composer create-project laravel/laravel example-app
+
+cd example-app
+
+php artisan serve
+
+
+MEMBUAT LOCAL VIRTUAL HOST
+*****************************
+Yaitu menjalankan projek laravel tanpa (php artisan serve) dengan mengakses nama_projek.test
+
+composer global require cpriego/valet-linux
+
+valet install
+
+https://viandwi24.medium.com/memasang-laravel-valet-di-linux-ubuntu-workspace-untuk-development-laravel-eced7326959f
+
+Valet ini menggunakan nginx, jadi apache2 harus distop (sudo service apache2 stop) kemudian jalankan (sudo service nginx start)
+
+Untuk melihat status valet (valet status)
+
+
+MEMBUAT MODEL BARU
+****************************
+php artisan make:model NamaModel
+
+//Kalau mau langsung ke databasenya (Belum dicoba)
+php artisan make:model NamaModel --migration
+
+
+BERMAIN DENGAN DATABASE
+***************************
+- Buat database baru
+- Kemudian atur koneksi database pada file .env
+- Atur schema database di database/migrate
+- Jalankan perintah berikut:
+php artisan migrate (Menjalankan schema database)
+php artisan migrate:fresh (Mereset schema dan membuat ulang/jika ada schema yang berubah)
+php artisan migrate:rollback (Mereset shema database/hapus)
+
+MEMBUAT TEMPLATE ISIAN TABEL DATABASE
+************************************
+Perintah terminal : php artisan tinker (Akan masuk ke shell laravel)
+Kemudian pilih directory model yang mau kita buat
+Contoh : $user = new App\Models\User;
+Kemudian mengaliaskan : $user = new User;
+Pastikan sudah mengecek modelnya:
+Contoh : App\Models\User
+
+protected $fillable = [
+        'name',
+        'email',
+        'password',
+    ];
+    
+Artinya hanya name, email, password yang bisa ditambahkan, selebihnya field diisi oleh laravel.
+
+Kemudian ketik perintah:
+$user->name = 'Firman Santosa';
+$user->email = 'admin@sifirman.com';
+$user->password = bcrypt('firman');
+
+Kemudian untuk save ketik perintah : $user->save();
+Menampilkan seluruh data : $user->all();
+
+Menampilkan data berdasarkan ID : $user->find(2); //2 adalah user ID, metode ini hanya bisa mencari berdasarkan ID
+Menampilkan data dan Error jika tidak ketemua : $user->findOrFail(2000); // artinya mencari ID yang 2000 jika tidak ketemua maka akan menampilkan pesan error.
+
+MEMBUAT MODEL SEKALIGUS MIGRATION
+***********************************
+Contoh membuat model dengan nama "Post" beserta file migrationnya
+Ketik di terminal:
+php artisan make:model -m Post
+
+Kemudian buat schema databasernya di file migrasi post
+
+Mengisi data langsung dari laravel menggunakan tinker:
+php artisan tinker (Lihat tutorial di atas tentang tinker)
+
+Kemudian menampilkan seluruh data dari database melalui model. Contoh model Post dengan mengetik:
+Post::all()
+
+Menampilkan yang pertama:
+Post::first()
+
+Menampilkan judulnya saja:
+Post::pluck('title')
+
+Menampilkan berdasarkan ID, misalnya ID 2:
+Post::find(2)
+
+

@@ -1,0 +1,139 @@
+.custom-popup .leaflet-popup-content-wrapper {
+    background: #2c3e50;
+    color: #fff;
+    font-size: 10px;
+    line-height: 12px;
+    border-radius: 0px;
+    padding: 0px;
+    width: 300px;
+    margin-bottom: -20px;
+    border-radius: 15px 15px 5px 5px;
+}
+
+.custom-popup .leaflet-popup-content-wrapper a {
+    color: rgba(255, 255, 255, 0.1);
+}
+
+.custom-popup .leaflet-popup-tip-container {
+    width: 30px;
+    height: 15px;
+    padding: 0px;
+}
+
+.custom-popup .leaflet-popup-tip {
+    background: #2c3e50;
+    border: none;
+    box-shadow: none;
+}
+
+
+/* Kalau Normal  */
+
+.custom_normal .leaflet-popup-tip,
+.custom_normal .leaflet-popup-content-wrapper {
+    background: #0b3654;
+    color: #ffffff;
+}
+
+
+/* Kalau Banjir  */
+
+.custom_banjir .leaflet-popup-tip,
+.custom_banjir .leaflet-popup-content-wrapper {
+    background: #ec0303;
+    color: #ffffff;
+}
+
+.custom_banjir .leaflet-popup-content-wrapper,
+.custom_normal .leaflet-popup-content-wrapper {
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+.leaflet-popup-tip-container {
+    bottom: -7px !important;
+    overflow: auto important!;
+}
+
+.leaflet-popup-tip {
+    background-clip: none !important;
+}
+
+.waseman {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.facebook,
+.twitter,
+.instagram,
+.telegram {
+    padding: 10px 15px;
+    background: #555956;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 10px;
+    color: white;
+    border-radius: 3px;
+}
+
+.facebook:hover,
+.twitter:hover,
+.instagram:hover,
+.telegram:hover {
+    background: #c97d18;
+}
+
+.legend {
+    color: #333;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    padding: 6px 21px 6px 21px;
+    background-color: #fff;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.legend h3 {
+    line-height: 5px;
+}
+
+.legend ul {
+    line-height: 15px;
+    padding-left: 20px;
+}
+
+.animated_icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 4px white;
+    transition: all 1s;
+    background: red;
+}
+
+.cover_gege {
+    display: block;
+    width: 100%;
+    position: relative;
+    height: 170px;
+    padding: 0 0 0 0;
+    overflow: hidden;
+    background: #000;
+    margin-left: 0px;
+    border-radius: 15px 15px 0 0;
+}
+
+.cover_gege img {
+    -moz-transition: all 0.9s;
+    -webkit-transition: all 0.9s;
+    transition: all 0.9s;
+    transform: scale(1.0);
+    width: 100%;
+}
+
+.cover_gege:hover img {
+    -moz-transform: scale(1.0);
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+}

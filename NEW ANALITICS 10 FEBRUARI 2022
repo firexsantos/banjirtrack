@@ -1,0 +1,22 @@
+Ubah backend untuk Alat,
+*************************************
+- Bisa menambahkan ketinggian Normal air per/setiap Alat
+- Simulasi post ke alat firebase
+- Contoh kasus:
+    - Pemko memiliki 5 alat, setiap alat diletak pada titik yang berbeda di sungai siak
+    - Setiap titik memiliki ketinggian normal air
+    - misalnya di titik 1, jika air sudah mencapai 2 meter maka Status adalah "Banjir"/Waspada 1
+    - di titik 2, jika air sudah mencapai 3 meter, maka status adalah "Banjir"/Waspada 1
+    - Harus diatur pada database/backend sistem berapa jarak meter status Normal (x)
+    - Untuk penentuan status siaga 1 - 3 adalah x/3. Misal, jika normal (x) adalah 3 meter, maka 3/3. Hasilnya
+        - Siaga 3 dijarah 3 meter
+        - Siaga 2 di jarak 2 meter
+        - Siaga 1 di jarak 1 meter
+        - Banjir pada jarak di bawah 1 meter
+
+
+DATA YANG DITAMPILKAN:
+- Ketinggian air
+- Curah Hujan
+- Temperatur Udara
+- Kelembapan Udara
